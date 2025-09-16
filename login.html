@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Shore2Door</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .login-container {
+      display: flex;
+      height: 100vh;
+    }
+    .login-image {
+      flex: 1;
+      background: url('images/login-bg.jpg') center/cover no-repeat;
+    }
+    .login-form {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #f7fdfc;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .btn-login {
+      background: #7b113a;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+    .login-options {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-image"></div>
+    <div class="login-form">
+      <h2>Welcome to Shore2Door</h2>
+      <p>Login to access fresh seafood</p>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email or Mobile Number</label>
+          <input type="text" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+        </div>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+      <div class="login-options">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Create Account</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/auth.js"></script>
+</body>
+</html>
